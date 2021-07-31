@@ -20,3 +20,28 @@
   line-height: 2.375rem;
   text-align: center;
 }
+
+.pr-18 {
+  padding-right: 18px !important;
+}
+
+.collection {
+  width: 25px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.hamburger-menu {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger__line {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(99, 94, 94);
+}

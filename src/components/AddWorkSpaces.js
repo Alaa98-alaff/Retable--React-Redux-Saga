@@ -6,7 +6,7 @@ function AddWorkSpaces() {
   return (
     <Container>
       <section>
-        <div className="pt-2 d-flex row">
+        <div className="pt-4 d-flex row">
           <div className="col-sm-6">
             <h3>Workspaces</h3>
           </div>
@@ -17,12 +17,30 @@ function AddWorkSpaces() {
           </div>
         </div>
       </section>
-      <section className="row pt-2">
+      <section className="d-flex row pt-2">
         <form className="form-group has-search col-sm-3">
           <span className="fa fa-search form-control-feedback"></span>
           <input type="text" className="form-control" placeholder="Search" />
         </form>
+        <div className="d-flex justify-content-end align-items-center col-sm-9 pr-18">
+          <span className="d-flex align-items-center">
+            <img
+              className="collection"
+              src="https://i.ibb.co/7nQM5f7/microsoft-edited.png"
+              alt="collection"
+            />
+          </span>
+          <span>
+            <div className="hamburger-menu">
+              <div className="hamburger__line"></div>
+              <div className="hamburger__line"></div>
+              <div className="hamburger__line"></div>
+              <div className="hamburger__line"></div>
+            </div>
+          </span>
+        </div>
       </section>
+      <hr />
     </Container>
   );
 }
