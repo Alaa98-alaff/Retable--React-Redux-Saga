@@ -17,6 +17,12 @@ function AddWorkSpaces() {
           </div>
         </div>
       </section>
+      <section className="row pt-2">
+        <form className="form-group has-search col-sm-3">
+          <span className="fa fa-search form-control-feedback"></span>
+          <input type="text" className="form-control" placeholder="Search" />
+        </form>
+      </section>
     </Container>
   );
 }
