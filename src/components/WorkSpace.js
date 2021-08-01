@@ -5,10 +5,10 @@ import "./WorkSpace.css";
 function WorkSpace() {
   return (
     <Container>
-      <section className="raw mt-45 d-flex">
+      <section className="raw mt-45 d-flex justify-content-between">
         <div className="col-sm-6 ">
           <div className="mb-2 d-flex align-items-center">
-            <span className="h3 pr-18">Workspace 1</span>
+            <span className="h3 pr-18">Dietician's Workspace</span>
             <a href="£" type="button">
               <img
                 className="arrow"
@@ -18,7 +18,9 @@ function WorkSpace() {
             </a>
           </div>
           <div>
-            <span className="h5 font-weight-normal">Defualt Workspace</span>
+            <span className="h5 font-weight-normal">
+              A Workspace that store all the dietician informations in UK
+            </span>
           </div>
         </div>
         <div className="col-sm-6">
