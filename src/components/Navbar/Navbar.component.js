@@ -1,7 +1,6 @@
-import "./Navbar.css";
+import "./Navbar.style.css";
 
 import { Navbar, Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavbarEl() {
   return (

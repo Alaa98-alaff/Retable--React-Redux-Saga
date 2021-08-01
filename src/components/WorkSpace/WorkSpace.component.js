@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
+import "./WorkSpace.style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./WorkSpace.css";
 
 function WorkSpace() {
   return (
