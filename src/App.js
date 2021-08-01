@@ -1,6 +1,7 @@
 import NavbarEl from "./components/Navbar";
 import AddWorkSpaces from "./components/AddWorkSpaces";
 import WorkSpace from "./components/WorkSpace";
+import DisapleWorkShops from "./components/DisapleWorkShops";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavbarEl></NavbarEl>
       <AddWorkSpaces></AddWorkSpaces>
       <WorkSpace></WorkSpace>
+      <DisapleWorkShops></DisapleWorkShops>
     </div>
   );
 }
