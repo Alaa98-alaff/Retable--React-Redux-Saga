@@ -19,3 +19,19 @@
   width: 12px;
   height: 12px;
 }
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.share-btn {
+  background-color: #32c5ff;
+  border-color: #32c5ff;
+  font-weight: 700;
+}
+
+.user-icon {
+  width: 15px;
+  height: 15px;
+  color: #fff;
+}
