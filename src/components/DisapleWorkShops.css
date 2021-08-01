@@ -4,5 +4,17 @@
 
 .card-bg {
   height: 60px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: #0cbaff;
+  border-color: #0cbaff;
+}
+
+.card_icon {
+  width: 35px;
+  height: 35px;
+}
+
+.arrow_icon {
+  width: 12px;
+  height: 12px;
 }

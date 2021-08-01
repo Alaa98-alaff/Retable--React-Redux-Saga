@@ -11,9 +11,20 @@ function DisapleWorkShops() {
           <div className="row d-flex">
             <div className="col-sm-3 mb-5">
               <div className="card-bg d-flex align-items-center justify-content-center card mb-1">
-                <span>logo</span>
+                <img
+                  className="card_icon"
+                  src="https://i.ibb.co/SyDSpv4/cookies-edited.png"
+                  alt="cookies"
+                />
               </div>
-              <span className="">Dietitian Project</span>
+              <div className="d-flex align-items-center justify-content-between">
+                <span className="">Dietitian Project</span>
+                <img
+                  className="arrow_icon"
+                  src="https://image.flaticon.com/icons/png/512/32/32195.png"
+                  alt="arrow icon"
+                />
+              </div>
             </div>
           </div>
         </div>
