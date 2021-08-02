@@ -1,7 +1,15 @@
+import { useSelector, useDispatch } from "react-redux";
 import "./AddWorkSpaces.style.css";
 import { Container } from "react-bootstrap";
 
 function AddWorkSpaces() {
+  const dispatch = useDispatch();
+  const addWorkspaces = useSelector((state) => state.addWorkspace);
+
+  const testAction = () => {
+    dispatch({ type: "add new workspace" });
+  };
+
   return (
     <Container>
       <section>
@@ -10,8 +18,12 @@ function AddWorkSpaces() {
             <h3>Workspaces</h3>
           </div>
           <div className="col-sm-6 d-flex justify-content-end">
-            <button type="button" className="btn-add btn btn-primary">
-              Add New Workspace
+            <button
+              onClick={testAction}
+              type="button"
+              className="btn-add btn btn-primary"
+            >
+              {addWorkspaces}
             </button>
           </div>
         </div>
