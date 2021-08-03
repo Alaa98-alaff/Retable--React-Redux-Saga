@@ -1,16 +1,16 @@
 import { createStore } from "redux";
 
-const initialStates = { addWorkspace: "Add New Workspace" };
+const initialStates = { openModal: false };
 
 // Reducer Function
-const reducer = (state = initialStates, action) => {
-  if (action.type === "add new workspace") {
-    return { addWorkspace: "WORKING!!!" };
+const Modalreducer = (state = initialStates, action) => {
+  if (action.type === "open modal") {
+    return { openModal: true };
   }
 
   return state;
 };
 
-const store = createStore(reducer);
+const store = createStore(Modalreducer);
 
 export default store;

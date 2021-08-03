@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux";
 import { Modal, Button } from "react-bootstrap";
 
 function ModalComponent() {
+  const show = useSelector((state) => state.openModal);
+
   return (
-    <Modal show={true} aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal show={show} aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header className="justify-content-center">
         <Modal.Title id="contained-modal-title-vcenter">
           <h1>Modal title</h1>
