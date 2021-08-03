@@ -1,8 +1,16 @@
+import { useDispatch } from "react-redux";
 import { Container } from "react-bootstrap";
 import "./WorkSpace.style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function WorkSpace() {
+  const dispatch = useDispatch();
+
+  const addProject = () => {
+    dispatch({ type: "open modal" });
+    dispatch({ type: "naming modal", value: "Add new project" });
+  };
+
   return (
     <Container>
       <section className="raw mt-45 d-flex justify-content-between">
@@ -25,7 +33,11 @@ function WorkSpace() {
         </div>
         <div className="col-sm-6">
           <div className="d-flex justify-content-end ">
-            <button type="button" className="btn-add btn btn-primary mb-10">
+            <button
+              type="button"
+              className="btn-add btn btn-primary mb-10"
+              onClick={addProject}
+            >
               Add new project
             </button>
           </div>
