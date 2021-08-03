@@ -1,19 +1,17 @@
-import NavbarEl from "./components/Navbar/Navbar.component";
-import AddWorkSpaces from "./components/AddWorkSpaces/AddWorkSpaces.component";
-import WorkSpace from "./components/WorkSpace/WorkSpace.component";
-import DisapleWorkShops from "./components/DisapleWorkShops/DisapleWorkShops.component";
-import ModalComponent from "./components/Modal/Modal.component";
+import { Route, Switch } from "react-router-dom";
+
+import HomePage from "./pages/HomePage.page";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div>
-      <ModalComponent></ModalComponent>
-      <NavbarEl></NavbarEl>
-      <AddWorkSpaces></AddWorkSpaces>
-      <WorkSpace></WorkSpace>
-      <DisapleWorkShops></DisapleWorkShops>
+      <Switch>
+        <Route path="/" exact>
+          <HomePage></HomePage>
+        </Route>
+      </Switch>
     </div>
   );
 }
