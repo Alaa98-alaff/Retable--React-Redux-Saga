@@ -10,6 +10,11 @@
   color: #1b0c4b;
 }
 
+.btn-add {
+  background-color: #1b0c4b !important;
+  border-color: #1b0c4b !important;
+}
+
 .font-weight-normal {
   font-weight: normal;
   color: #776aa2 !important;
