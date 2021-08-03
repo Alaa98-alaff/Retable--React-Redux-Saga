@@ -19,9 +19,9 @@ function WorkSpace() {
   return (
     <Container>
       <section className="raw mt-45 d-flex justify-content-between">
-        <div className="col-sm-6 ">
+        <div className="col-sm-7 ">
           <div className="mb-2 d-flex align-items-center">
-            <span className="h3 pr-18">Dietician's Workspace</span>
+            <span className="h3 pr-18 fw-bold">Dietician's Workspace</span>
             <a href="£" type="button">
               <img
                 className="arrow"
@@ -36,7 +36,7 @@ function WorkSpace() {
             </span>
           </div>
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-5">
           <div className="d-flex justify-content-end ">
             <button
               type="button"

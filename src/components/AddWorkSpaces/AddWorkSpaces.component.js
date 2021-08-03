@@ -15,7 +15,7 @@ function AddWorkSpaces() {
       <section>
         <div className="pt-4 d-flex row">
           <div className="col-sm-6">
-            <h3>Workspaces</h3>
+            <h3 className="title fw-bold">Workspaces</h3>
           </div>
           <div className="col-sm-6 d-flex justify-content-end">
             <button
