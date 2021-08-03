@@ -1,4 +1,4 @@
-function ProjectTable() {
+function ProjectTablePage() {
   return (
     <div>
       <h1>Project Table page</h1>
@@ -6,4 +6,4 @@ function ProjectTable() {
   );
 }
 
-export default ProjectTable;
+export default ProjectTablePage;
