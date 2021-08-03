@@ -11,6 +11,11 @@ function WorkSpace() {
     dispatch({ type: "naming modal", value: "Add new project" });
   };
 
+  const shareHandler = () => {
+    dispatch({ type: "open modal" });
+    dispatch({ type: "naming modal", value: "Share" });
+  };
+
   return (
     <Container>
       <section className="raw mt-45 d-flex justify-content-between">
@@ -46,6 +51,7 @@ function WorkSpace() {
             <button
               type="button"
               className="share-btn btn b btn-sm btn-primary d-flex align-items-center"
+              onClick={shareHandler}
             >
               Share
               <img
