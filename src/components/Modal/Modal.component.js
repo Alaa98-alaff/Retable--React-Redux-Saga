@@ -1,8 +1,13 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Modal, Button } from "react-bootstrap";
 
 function ModalComponent() {
+  const dispatch = useDispatch();
   const show = useSelector((state) => state.openModal);
+
+  const closeModal = () => {
+    dispatch({ type: "close modal" });
+  };
 
   return (
     <Modal show={show} aria-labelledby="contained-modal-title-vcenter" centered>
@@ -12,7 +17,7 @@ function ModalComponent() {
         </Modal.Title>
       </Modal.Header>
       <Modal.Footer className="p-1">
-        <Button>Close</Button>
+        <Button onClick={closeModal}>Close</Button>
       </Modal.Footer>
     </Modal>
   );

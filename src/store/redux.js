@@ -8,6 +8,10 @@ const Modalreducer = (state = initialStates, action) => {
     return { openModal: true };
   }
 
+  if (action.type === "close modal") {
+    return { openModal: false };
+  }
+
   return state;
 };
 
