@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./DisapleWorkShops.style.css";
 import { Container } from "react-bootstrap";
 
@@ -8,13 +9,15 @@ function DisapleWorkShops() {
         <div className=" py-5 px-5 shadow border-0">
           <div className="row d-flex">
             <div className="col-sm-3 mb-4">
-              <div className="card-bg d-flex align-items-center justify-content-center card mb-1">
-                <img
-                  className="card_icon"
-                  src="https://i.ibb.co/SyDSpv4/cookies-edited.png"
-                  alt="cookies"
-                />
-              </div>
+              <Link to="/project-table">
+                <div className="card-bg d-flex align-items-center justify-content-center card mb-1 cursor">
+                  <img
+                    className="card_icon"
+                    src="https://i.ibb.co/SyDSpv4/cookies-edited.png"
+                    alt="cookies"
+                  />
+                </div>
+              </Link>
               <div className="d-flex align-items-center justify-content-between">
                 <span className="">Dietitian Project</span>
                 <img

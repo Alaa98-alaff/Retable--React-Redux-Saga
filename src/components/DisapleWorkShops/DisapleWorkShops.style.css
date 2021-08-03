@@ -9,6 +9,10 @@
   border-color: #0cbaff;
 }
 
+.cursor {
+  cursor: pointer !important;
+}
+
 .card_icon {
   width: 35px;
   height: 35px;
