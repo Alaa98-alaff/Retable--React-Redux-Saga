@@ -9,3 +9,7 @@ export const openModal = () => {
 export const modalName = () => {
   return { type: "MODAL_NAMING" };
 };
+
+export const getProjData = () => {
+  return { type: "GET_DATA_REQUESTED" };
+};
