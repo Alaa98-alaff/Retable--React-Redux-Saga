@@ -3,11 +3,11 @@ import { Modal, Button } from "react-bootstrap";
 
 function ModalComponent() {
   const dispatch = useDispatch();
-  const show = useSelector((state) => state.openModal);
-  const modaltitle = useSelector((state) => state.modalTitle);
+  const show = useSelector((state) => state.modalAppearance.openModal);
+  const modaltitle = useSelector((state) => state.modalTitle.modalTitles);
 
   const closeModal = () => {
-    dispatch({ type: "close modal" });
+    dispatch({ type: "CLOSE_MODAL" });
   };
 
   return (
