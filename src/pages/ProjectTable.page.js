@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Spreadsheet from "react-spreadsheet";
 
 import NavbarProjects from "../components/Navbar Projects/NavbarProjects.component";
-import SpinnerComponent from "../components/Spinner.component";
+import SpinnerComponent from "../components/Spinner/Spinner.component";
 import { getProjData } from "../actions";
 
 function ProjectTablePage() {
@@ -29,14 +29,16 @@ function ProjectTablePage() {
 
   useEffect(() => {
     dispatch(getProjData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
       <NavbarProjects />
-      {loading && <SpinnerComponent />}
-      {error && !loading && <h2>{error}</h2>}
-      {data && <Spreadsheet data={tableData} />}
+      <div className="scrollable_container">
+        {loading && <SpinnerComponent />}
+        {error && !loading && <h2>{error}</h2>}
+        {data && <Spreadsheet data={tableData} />}
+      </div>
     </div>
   );
 }

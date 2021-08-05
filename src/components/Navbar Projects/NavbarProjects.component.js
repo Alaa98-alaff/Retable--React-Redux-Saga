@@ -2,7 +2,7 @@ import "./NavbarProjects.style.css";
 
 function NavbarProjects() {
   return (
-    <div>
+    <div className="nav-proj position-fixed w-100">
       <nav
         className="navbar navbar-expand-lg d-flex justify-content-between py-0"
         style={{ backgroundColor: "rgb(23, 210, 211)" }}
