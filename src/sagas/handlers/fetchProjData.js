@@ -4,8 +4,27 @@ import fetchProjData from "../requests/fetchProjData";
 // Generator fun
 function* handleGetData() {
   try {
-    const data = yield call(fetchProjData);
-    yield put({ type: "GET_DATA_SUCCESS", data: data });
+    const response = yield call(fetchProjData);
+
+    const hiddenColumns = [];
+
+    const columns = response.info.columns
+      .filter((col, key) => {
+        const hidden = col.type === "hidden";
+        if (hidden) {
+          hiddenColumns.push(key);
+        }
+        return !hidden;
+      })
+      .map((col) => col.title);
+
+    const data = response.data.map((row) =>
+      row
+        .filter((_col, key) => hiddenColumns.indexOf(key) < 0)
+        .map((col) => ({ value: col }))
+    );
+
+    yield put({ type: "GET_DATA_SUCCESS", data: { columns, data } });
   } catch (err) {
     yield put({ type: "GET_DATA_FAILED", message: err.message });
   }
