@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import Spreadsheet from "react-spreadsheet";
 
+import NavbarProjects from "../components/Navbar Projects/NavbarProjects.component";
+import SpinnerComponent from "../components/Spinner.component";
 import { getProjData } from "../actions";
 
 function ProjectTablePage() {
@@ -31,8 +33,8 @@ function ProjectTablePage() {
 
   return (
     <div>
-      <h1>Project Table page</h1>
-      {loading && <h2>Loading...</h2>}
+      <NavbarProjects />
+      {loading && <SpinnerComponent />}
       {error && !loading && <h2>{error}</h2>}
       {data && <Spreadsheet data={tableData} />}
     </div>
