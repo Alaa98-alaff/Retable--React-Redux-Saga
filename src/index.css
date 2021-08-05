@@ -13,3 +13,13 @@ body {
   top: 2.5em;
   position: relative;
 }
+
+th.Spreadsheet__header {
+  min-width: 3rem;
+}
+
+td.Spreadsheet__cell {
+  white-space: pre-line;
+  max-width: 22.5rem;
+  padding: 1em;
+}
