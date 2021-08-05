@@ -6,8 +6,7 @@ function AddWorkSpaces() {
   const dispatch = useDispatch();
 
   const addWorkspace = () => {
-    dispatch({ type: "OPEN_MODAL" });
-    dispatch({ type: "MODAL_NAMING", value: "Add new workspace" });
+    dispatch({ type: "OPEN_MODAL", value: "Add new workspace" });
   };
 
   return (

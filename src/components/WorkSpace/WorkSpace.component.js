@@ -7,13 +7,11 @@ function WorkSpace() {
   const dispatch = useDispatch();
 
   const addProject = () => {
-    dispatch({ type: "OPEN_MODAL" });
-    dispatch({ type: "MODAL_NAMING", value: "Add new project" });
+    dispatch({ type: "OPEN_MODAL", value: "Add new project" });
   };
 
   const shareHandler = () => {
-    dispatch({ type: "OPEN_MODAL" });
-    dispatch({ type: "MODAL_NAMING", value: "Share" });
+    dispatch({ type: "OPEN_MODAL", value: "Share" });
   };
 
   return (
