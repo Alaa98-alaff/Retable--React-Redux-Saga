@@ -1,3 +1,11 @@
+.project_card {
+  transition: all 250ms ease-in-out;
+}
+
+.project_card:hover {
+  transform: scale(1.03);
+}
+
 .mt-30 {
   margin-top: 30px;
 }

@@ -8,7 +8,7 @@ function NavbarEl() {
     <Navbar className="navbar navbar-expand-lg bg-primary">
       <Container>
         <Navbar.Brand>
-          <Link to={"/"}>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
             <div className="d-flex align-items-start">
               <img
                 src="https://retable.io/static/media/retableLogoWhite.78b22a6a.png"

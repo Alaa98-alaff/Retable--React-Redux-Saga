@@ -6,6 +6,10 @@
   font-size: 16px;
 }
 
+.btn-add:hover {
+  background-color: #200281 !important;
+}
+
 .btn-primary {
   background-color: #1b0c4b;
   border-color: #1b0c4b;

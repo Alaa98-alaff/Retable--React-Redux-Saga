@@ -8,7 +8,7 @@ function DisapleWorkShops() {
       <section className="mt-30">
         <div className=" py-5 px-5 shadow border-0">
           <div className="row d-flex">
-            <div className="col-sm-3 mb-4">
+            <div className="project_card col-sm-3 mb-4">
               <Link to="/project-table">
                 <div className="card-bg d-flex align-items-center justify-content-center card mb-1 cursor">
                   <img
