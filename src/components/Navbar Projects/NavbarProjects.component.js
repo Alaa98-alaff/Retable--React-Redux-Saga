@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./NavbarProjects.style.css";
 
 function NavbarProjects() {
@@ -7,13 +9,13 @@ function NavbarProjects() {
         className="navbar navbar-expand-lg d-flex justify-content-between py-0"
         style={{ backgroundColor: "rgb(23, 210, 211)" }}
       >
-        <div>
+        <Link to="/">
           <img
             src="https://i.ibb.co/Lp5dgqG/retable-logo-Recovered222.png"
             alt="logo"
             className="retable_logo"
           />
-        </div>
+        </Link>
 
         <div className="title_box d-flex align-items-center justify-content-between">
           <img
@@ -27,9 +29,9 @@ function NavbarProjects() {
         </div>
 
         <div className="text-center">
-          <a className="navbar-brand m-0 " href="$">
+          <Link className="navbar-brand m-0 " to="/">
             Signup
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

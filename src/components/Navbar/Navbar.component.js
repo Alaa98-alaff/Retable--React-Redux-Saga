@@ -1,20 +1,23 @@
 import "./Navbar.style.css";
 
 import { Navbar, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function NavbarEl() {
   return (
     <Navbar className="navbar navbar-expand-lg bg-primary">
       <Container>
-        <Navbar.Brand href="#">
-          <div className="d-flex align-items-start">
-            <img
-              src="https://retable.io/static/media/retableLogoWhite.78b22a6a.png"
-              alt="Logo"
-              className="topbar-logo"
-            />
-            <span className="ml-2 badge bg-secondary">BETA</span>
-          </div>
+        <Navbar.Brand>
+          <Link to={"/"}>
+            <div className="d-flex align-items-start">
+              <img
+                src="https://retable.io/static/media/retableLogoWhite.78b22a6a.png"
+                alt="Logo"
+                className="topbar-logo"
+              />
+              <span className="ml-2 badge bg-secondary">BETA</span>
+            </div>
+          </Link>
         </Navbar.Brand>
         <div className="navbar-collapse collapse d-flex justify-content-end">
           <div className="navbar-nav">

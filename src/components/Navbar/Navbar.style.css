@@ -5,6 +5,7 @@
 .topbar-logo {
   width: 125px;
   height: 25px;
+  cursor: pointer;
 }
 
 .badge {
